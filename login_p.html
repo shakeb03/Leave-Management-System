@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="login_p.css" type="text/css" />
+    <title>Login</title>
+    <!--<script>
+        function login() {
+            var userid = document.forms["User_login_f"]["username"].value;
+            var pass = document.forms["User_login_f"]["password"].value;
+            if (userid == "shakeb" && pass == "shakeb123") {
+                window.open('C:/Users/shake/Desktop/WAD Case Study/github/WAD-Case-Study-main/WAD-Case-Study-main/Main_p.html');
+            } else {
+                alert("Wrong username or password");
+            }
+        }
+    </script>-->
+    <style type="text/css">
+        div {
+            border-radius: 10%;
+        }
+        
+        body {
+            background-color: #8fe4cd;
+            background-attachment: scroll;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #351f39;
+            margin-top: -100px;
+            font-size: 50px;
+            padding-bottom: 25px;
+        }
+        
+        img.left {
+            margin-left: 30px;
+            margin-right: auto;
+            opacity: 0.7;
+        }
+        
+        img.right {
+            margin-left: 76%;
+            margin-right: auto;
+            opacity: 0.7;
+        }
+        
+        div {
+            width: 200px;
+            padding: 10px;
+            margin: auto;
+            border: 5px solid gray;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 3px 10px;
+            margin: 1px 0;
+            box-sizing: border-box;
+        }
+        
+        input[type=text]:focus,
+        input[type=password]:focus {
+            border: 3px solid #555;
+            border-radius: 10%;
+        }
+        
+        input[type=submit] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 4px 6px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <img src="https://ieimjcet.files.wordpress.com/2013/10/mjcet.png" class="left" alt="MJCET Logo" height="150px" width="150px" />
+    <img src="https://ieimjcet.files.wordpress.com/2013/10/mjcet.png" class="right" alt="MJCET Logo" height="150px" width="150px" />
+    <h1 style="font-family:System-ui;">Leave Management System </h1>
+    <hr/>
+
+    <div>
+        <form name="User_login_f" action="http://127.0.0.1:8001/Main_p" method="post">
+            <label>Username:</label><br>
+            <input type="text" name="username" required><br>
+            <label>Enter Password:</label><br>
+            <input type="password" name="password" required><br>
+            <input type="submit" value="Login" id="login_btn">
+        </form>
+    </div>
+
+</body>
+
+</html>
