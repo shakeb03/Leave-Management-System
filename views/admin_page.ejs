@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Admin-View </title>
+    <style type="text/css">
+        body {
+            text-align: center;
+            background-color: #f1aa9b;
+            background-attachment: scroll;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #351f39;
+            margin-top: -100px;
+            font-size: 50px;
+            padding-bottom: 25px;
+        }
+        
+        h2 {
+            text-align: center;
+            color: black;
+        }
+        
+        img.left {
+            margin-left: 5px;
+            margin-right: auto;
+            opacity: 0.7;
+        }
+        
+        img.right {
+            margin-left: 76%;
+            margin-right: auto;
+            opacity: 0.7;
+        }
+        /*Table */
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        #t1 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        
+        #t1 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        
+        #t1 th {
+            background-color: #351f39;
+            color: white;
+        }
+        
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /*Button of Accept and Reject */
+        
+        .button {
+            color: white;
+            padding: 1px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 4px;
+            margin: 2px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 1px solid #4CAF50;
+        }
+        
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 1px solid #e21515;
+        }
+        
+        .button2:hover {
+            background-color: #e21515;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="https://ieimjcet.files.wordpress.com/2013/10/mjcet.png" class="left" alt="MJCET Logo" height="150px" width="150px" />
+    <img src="https://ieimjcet.files.wordpress.com/2013/10/mjcet.png" class="right" alt="MJCET Logo" height="150px" width="150px" />
+    <h1 style="font-family:System-ui;">Leave Management System </h1>
+    <hr />
+    <form action='/' method='POST'>
+        <table id="t1" class="center">
+            <h2>Leave Permission</h2>
+            <tr>
+                <th> Requested Date </th>
+                <th> UserID </th>
+                <th> Type of Leave </th>
+                <th> No. of Days </th>
+                <th> Additional Comments </th>
+                <!--<th colspan="2"> Action </th>-->
+            </tr>
+            <% for(var i=0;i<leave_da.length;i++){%>
+                <tr>
+                    <td>
+                        <%=leave_da[i].date%>
+                    </td>
+                    <td>
+                        <%=leave_da[i].username%>
+                    </td>
+                    <td>
+                        <%=leave_da[i].category%>
+                    </td>
+                    <td>
+                        <%=leave_da[i].duration%>
+                    </td>
+                    <td>
+                        <%=leave_da[i].additional_info%>
+                    </td>
+                    <!--<td> <button class="button button1" type="submit"> Accept </td>
+                    <td> <button class="button button2" type="submit"> Reject </td>-->
+
+                    <!--new buttons with anchor tags
+                -->
+                    <!--<td>
+                        <a href="#" class="button button1">
+                            <span><i style="font-size: 10px;">Accept</i></span>
+                        </a>
+                        <a class="button button2">
+                            <span><i style="font-size: 10px;">Reject</i></span>
+                        </a>
+                    </td>
+                -->
+                </tr>
+                <%}%>
+
+        </table>
+
+    </form>
+    <br>
+
+</body>
+
+</html>
