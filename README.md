@@ -3,4 +3,5 @@
 s1.js = server file
 
 NOTE:
-change the mongodb path in mongoclient
+-> Change the mongodb path in mongoclient
+-> Change the mongodb collections and database 
