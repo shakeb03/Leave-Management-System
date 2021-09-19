@@ -1,3 +1,6 @@
+# Leave-Management-System
+
+
 **The primary concern of managing leave applications of the employees in an organization is hectic, with having
 documentation of every employee's leave with its duration and a reason is not feasible.
 Here our project is planned and designed to solve this issue by creating a web application.
@@ -8,14 +11,6 @@ The final output of this web application would be to let employees request their
 the status of the employees requesting leaves.**
 
 
-
-
-
-
-
-
-
-# Leave-Management-System
 
 s1.js = server file
 
