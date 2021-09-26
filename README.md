@@ -10,6 +10,8 @@ end. It also uses CRUD operations.
 The final output of this web application would be to let employees request their leaves with admin authorised to get
 the status of the employees requesting leaves.**
 
+**A Video Demonstrartion of working of the entire website.**
+https://drive.google.com/file/d/1SxJVp36qi6LX5E_YmrnDKAS7reYeKrOe/view
 
 
 s1.js = server file
